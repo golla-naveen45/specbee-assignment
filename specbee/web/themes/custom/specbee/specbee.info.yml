@@ -1,0 +1,10 @@
+name: Specbee
+type: theme
+description: "Specbee assignment"
+core_version_requirement: ^9 || ^10 || ^11
+base theme: olivero
+
+libraries:
+ - specbee/specbee_slick
+ - specbee/global_styling
+ - specbee/google_fonts

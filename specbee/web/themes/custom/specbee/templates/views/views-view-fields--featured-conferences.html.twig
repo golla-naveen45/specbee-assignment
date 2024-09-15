@@ -1,0 +1,42 @@
+<div class="card-banner">
+	{% if fields.field_banner_image.content is iterable and fields.field_banner_image.content|length > 0 %}
+		{{ fields.field_banner_image.content }}
+	{% elseif fields.field_banner_image.content is not empty %}
+		{{ fields.field_banner_image.content }}
+	{% else %}
+		<span>
+			<i class="bi bi-tags"></i>
+		</span>
+		<h2>Conferences</h2>
+	{% endif %}
+	<span>{{ fields.field_price_tag.content }}</span>
+</div>
+{# <div class="wrapper"> #}
+	<div class="card-details">
+		<h2>{{ fields.title.content }}</h2>
+		<div class="managment">
+			<img src="/themes/custom/specbee/images/tags.svg" alt="tags"/>
+			{{ fields.field_management.content }}
+		</div>
+		<div class="card-date">
+			<img src="/themes/custom/specbee/images/date.svg" alt="Date"/>
+			{{ fields.field_date.content }}
+		</div>
+		<div class="card-location">
+			<img src="/themes/custom/specbee/images/location.svg" alt="Location"/>
+			{{ fields.field_location.content }}
+		</div>
+	</div>
+	<div class="view-details">
+		<span class="heart">
+			{# <i class="bi bi-heart"></i> #}
+		</span>
+		<span class="download">
+			{# <i class="bi bi-cloud-arrow-down"></i> #}
+		</span>
+		<span class="share">
+			{# <i class="bi bi-share-fill"></i> #}
+		</span>
+		<div>{{ fields.view_node.content }}</div>
+	</div>
+{# </div> #}

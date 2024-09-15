@@ -1,0 +1,5 @@
+name: 'my module 2'
+type: module
+description: 'testing module'
+package: Custom
+core_version_requirement: ^10 || ^11

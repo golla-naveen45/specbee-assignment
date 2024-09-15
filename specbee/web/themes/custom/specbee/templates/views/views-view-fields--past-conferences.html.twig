@@ -1,0 +1,31 @@
+<div class="card-banner">
+	{% if fields.field_banner_image.content %}
+		{{ fields.field_banner_image.content }}
+	{% else %}
+		<span>
+			<i class="bi bi-tags"></i>
+		</span>
+		<h2>Confrences</h2>
+	{% endif %}
+</div>
+<div class="card-details">
+	<h2>{{ fields.title.content }}</h2>
+	<div class="managment">
+		<img src="/themes/custom/specbee/images/tags.svg" alt="tags"/>
+		{{ fields.field_management.content }}
+	</div>
+	<div class="card-date">
+		<img src="/themes/custom/specbee/images/date.svg" alt="Date"/>
+		{{ fields.field_date.content }}
+	</div>
+	<div class="card-location">
+		<img src="/themes/custom/specbee/images/location.svg" alt="Location"/>
+		{{ fields.field_location.content }}
+	</div>
+</div>
+<div class="view-details">
+	<span class="heart"></span>
+	<span class="download"></span>
+	<span class="share"></span>
+	<div>{{ fields.view_node.content }}</div>
+</div>
