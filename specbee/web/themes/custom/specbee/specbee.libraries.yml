@@ -41,6 +41,4 @@ google_fonts:
   version: 1.x
   css:
     theme:
-      'https://fonts.googleapis.com': { type: external, rel: preconnect }
-      'https://fonts.gstatic.com': { type: external, rel: preconnect, crossorigin: anonymous }
       'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap': { type: external }

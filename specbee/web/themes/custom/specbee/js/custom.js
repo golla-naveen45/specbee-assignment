@@ -12,9 +12,7 @@
 (function ($, Drupal) {
   Drupal.behaviors.tabsBehavior = {
     attach: function (context, settings) {
-      const initializedTabs = {}; // Track initialized tabs
-
-      // Function to initialize Slick Slider
+      const initializedTabs = {}; 
       function initSlickSlider(content) {
         const $content = $(content);
         if (!$content.hasClass('slick-initialized')) {
@@ -84,7 +82,3 @@
     },
   };
 })(jQuery, Drupal);
-
-
-
-

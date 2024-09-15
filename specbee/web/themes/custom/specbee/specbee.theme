@@ -1,7 +1,0 @@
-
-  
-<?php
-function specbee_preprocess_page(&$variables) {
-    // Attach the Slick Slider library to the page.
-    $variables['#attached']['library'][] = 'specbee/specbee_slick';
-  }
